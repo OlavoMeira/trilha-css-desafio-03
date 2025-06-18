@@ -1,0 +1,47 @@
+@import url('reset.css');
+body{
+    margin: 0;
+    display: grid;
+    height: 80vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "header header header header"
+    "sidbar  main   main   main "
+    "sidbar footer footer footer";
+    row-gap: 20px;
+    
+}
+
+header {
+background-color: aqua;
+grid-area: header;
+
+
+}
+
+main {
+    background-color: brown;
+}
+
+aside {
+    background-color: aquamarine;
+    height: 70%;
+
+
+}
+
+span img{
+    
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    background-color:bisque;
+}
+
+footer {
+    grid-area: footer;
+}
+
