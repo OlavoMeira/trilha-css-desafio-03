@@ -14,31 +14,98 @@ body{
 }
 
 header {
-background-color: aqua;
-grid-area: header;
+    background-color: aqua;
+    height: 56px;
+    grid-area: header;
+    display: grid; 
+    grid-template-columns: repeat(6, 1fr); 
+    grid-template-rows: 1fr;
 
+    .nav7 {
+
+        grid-column-start: 6;
+        grid-column-end: 7;
+        grid-row-start: -2;
+        grid-row-end: -1;
+        justify-self:end;
+        align-self: start;
+        padding: 10px;
+    }
+
+    .nav6 {
+    grid-column-start: 6;
+        grid-column-end: 7;
+        grid-row-start: -2;
+        grid-row-end: -1;
+        justify-self:center;
+        align-self: start; 
+        padding: 15px;
+    }
+
+    .nav5{
+        grid-column-start: 6;
+        grid-column-end: 7;
+        grid-row-start: -2;
+        grid-row-end: -1;
+        justify-self:left;
+        align-self: start; 
+        padding: 15px;
+    }
+
+    .nav3{
+        grid-column-start: 3;
+        grid-column-end: 6;
+        grid-row-start: -2;
+        grid-row-end: -1;
+        justify-self:left;
+        align-self: start; 
+        padding: 10px;
+    }
+
+    .nav1{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: -2;
+        grid-row-end: -1;
+        justify-self:auto;
+        align-self: start;
+        padding: 15px; 
+    }
+
+    .nav2{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: -2;
+        grid-row-end: -1;
+        justify-self:center;
+        align-self: start;
+        padding: 15px; 
+    }
 
 }
 
 main {
     background-color: brown;
+    
 }
 
 aside {
+    width: 218px;
+    height: 968px;
+    opacity: 1;
     background-color: aquamarine;
-    height: 70%;
-
-
-}
-
-span img{
     
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 2;
+    nav {
+        display: grid;
+        grid-template-columns: 1, 1fr;
+        grid-template-rows: repeat(9, 0.5fr);
+        
+        img{
+            padding-bottom: 20px;
+        }
+    }
 
-    background-color:bisque;
+    
 }
 
 footer {
